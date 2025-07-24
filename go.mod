@@ -1,4 +1,4 @@
-module mcp
+module github.com/vaibhavnayak30/mcp_in_golang
 
 go 1.24.5
 
