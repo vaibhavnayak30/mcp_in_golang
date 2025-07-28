@@ -3,14 +3,7 @@ package main
 
 import (
 	"context"
-	"fmt"
-	"log"
-	"net"
 	"net/http"
-	"os"
-	"os/signal"
-	"time"
-
 	"github.com/modelcontextprotocol/go-sdk/mcp"
 	mcpinternal "github.com/vaibhavnayak30/mcp_in_golang/internal/mcp"
 	"github.com/vaibhavnayak30/mcp_in_golang/internal/router"
@@ -37,7 +30,7 @@ func main() {
 	sseHandler := mcp.NewSSEHandler(
 		func(_ *http.Request) *mcp.Server {
 			return server
-		}
+		},
 	)
 
 	// Setup HTTP router
@@ -54,4 +47,8 @@ func main() {
 
 	// Launch the server 
 	launch(ctx, r, 8994)
+}
+
+func launch(ctx context.Context, router http.Handler, port int) {
+
 }
