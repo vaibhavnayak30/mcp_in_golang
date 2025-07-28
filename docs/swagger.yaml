@@ -1,0 +1,7 @@
+info:
+  contact: {}
+  description: Math MCP Server for basic math operations
+  title: MCP Math Server API
+  version: "1.0"
+paths: {}
+swagger: "2.0"

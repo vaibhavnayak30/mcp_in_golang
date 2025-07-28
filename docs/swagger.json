@@ -1,0 +1,10 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "Math MCP Server for basic math operations",
+        "title": "MCP Math Server API",
+        "contact": {},
+        "version": "1.0"
+    },
+    "paths": {}
+}
